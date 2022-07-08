@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>i编程</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="description" content="Description">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
@@ -15,15 +15,50 @@
     <script>
         window.$docsify = {
             el: '#app',
-            name: '大数据笔记本',
+            name: 'i编程',
             // repo: 'https://github.com/mochazi/docsify-demo',
             loadNavbar: true, //开启导航栏
             coverpage: true, //开启封面
             loadSidebar: true, //开启侧边栏
             auto2top: true, //切换页面自动回到顶部
             subMaxLevel: 2, //目录最大级数
-            maxLevel: 4 //可配置最大支持渲染的标题层级
-                // homepage: 'zh-cn/README.md', //设置中文的README.md作为首页
+            maxLevel: 4, //可配置最大支持渲染的标题层级
+            homepage: 'guide.md', //设置中文的README.md作为首页
+            //添加搜索功能，中文和英文文档同时搜索
+            search: {
+                paths: 'auto',
+                placeholder: {
+                    '/': '🔍 搜索',
+                    '/zh-cn/': '🔍 搜索',
+                    '/en-us/': '🔍 Type to search'
+                },
+                //如果中文和英文文档都没有内容，则返回
+                noData: {
+                    '/': '😒 找不到结果',
+                    '/zh-cn/': '😒 找不到结果',
+                    '/en-us/': '😒 No Results'
+                },
+
+                depth: 4, //搜索标题的最大层级
+                maxAge: 86400000, // 过期时间，单位毫秒，默认一天
+            }, //增加搜索框
+
+            footer: {
+                copy: 'Copyright &copy; 2021 💖 </span>',
+                auth: ' <strong>-相依-</strong>',
+                pre: '<hr/>',
+                style: 'text-align: center;',
+            },
+
+            copyCode: {
+                buttonText: 'Copy',
+                errorText: 'Error',
+                successText: 'OK!'
+            },
+
+            'flexible-alerts': {
+                style: 'flat'
+            }
         }
     </script>
     <!-- Docsify v4 -->
