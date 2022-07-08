@@ -1,0 +1,11 @@
+HELP.md
+
+
+
+### VS Code ###
+.vscode/
+
+
+# ds_store
+.DS_Store
+docs/.DS_Store
