@@ -1,4 +1,4 @@
-<img width="160px" style="border-radius: 50%" bor src="style/weixinqr.jpg">
+<img width="160px" style="border-radius: 50%" bor src="imgs/head.png">
 
 # **i编程.cn**
 
