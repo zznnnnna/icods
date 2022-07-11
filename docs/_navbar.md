@@ -1,5 +1,5 @@
 - [主页](/)
-- Translations
-    - [:cn: 中文](/zh-cn/)
-    - [:us: English](/en-us/)
+- 内容切换
+    - [ :cn: 大数据开发](/bigdata/)
+    - [ :cn: NLP自然语言处理](/nlp/)
     

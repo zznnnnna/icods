@@ -1,12 +1,16 @@
-<img width="160px" style="border-radius: 50%" bor src="imgs/head.png">
+<img width="160px" style="border-radius: 50%" bor src="style/head3.png">
 
-# **i编程.cn**
+# **i编程**<small>.cn</small>
 
-- 本站主要为两个志同道合的朋友,在互联网实事变化下为明确自己的技术方向而分<br>文章主要两个方面
-- 一是从 ```Java``` 转型 ```大数据```的学习经验总结<br> 二是从 ```Python``` 转型 ```NLP```的学习经验总结<br>
+- <h3>本网站主要分享以下两个方面的内容</h3>
 
-<br>希望可以与有相同经历的小伙伴共同进步<br>如果您对此感兴趣，可以扫码关注我的公众号，文章会同步发布！
+- <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
-[GitHub](https://github.com/zznnnnna)
-[开始阅读](?id=感言)
+<!-- 从 ```Java``Java` 转型 ```大数据开发```的学习经验总结<br>从 ```Python``` 转型 ```NLP自然语言处理```的学习经验总结<br>
+-->
+
+<br>(  感兴趣的小伙伴，可以点击相应的内容进行阅读📕  )<br>
+
+[大数据开发](/bigdata/)
+[NLP自然语言处理](/nlp/)
 

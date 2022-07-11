@@ -1,5 +1,5 @@
-/* 置顶插件 */
 
+/* 置顶插件 */
 .to-top {
     display: none;
     padding: 10px 20px;
@@ -8,3 +8,10 @@
     border-radius: 10px;
     background-color: rgb(66, 185, 131);
 }
+/*body {*/
+/*    overflow: auto !important;*/
+/*}*/
+/*!*轮播图下边框*!*/
+/*.carousel {*/
+/*    margin: 30px;*/
+/*}*/
