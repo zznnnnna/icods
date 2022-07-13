@@ -4,13 +4,13 @@ https://hadoop.apache.org/release/3.2.3.html
 
 https://mirrors.tuna.tsinghua.edu.cn/apache/
 
-![download](/Users/n/Desktop/hadoop/imgs/hadoop_download.png)
+![download](imgs/hadoop_download.png)
 
 3.jdk下载地址
 
 https://www.oracle.com/java/technologies/downloads/
 
-![download](/Users/n/Desktop/hadoop/imgs/jdk_download.png)
+![download](imgs/jdk_download.png)
 
 4.下载后传输至服务器并解压
 
