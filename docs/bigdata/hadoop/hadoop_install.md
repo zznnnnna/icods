@@ -36,7 +36,7 @@ n@n:~$ vim .bash_profile
 n@n:~$ source .bash_profile 
 n@n:~$ 
 ....
-export JAVA_HOME=/home/n/jdk1.8
+export JAVA_HOME=/home/n/module/jdk1.8
 export PATH=.:$JAVA_HOME/bin:$PATH
 ...
 n@n:~$ 
