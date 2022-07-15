@@ -84,7 +84,7 @@ Apache Flink 是一个开源的分布式，高性能，高可用，准确的流�
 
 -  认为文章写的不错的或者对于大数据开发有不一样的见解和分析的小伙伴，欢迎关注我的公众号[大数据笔记本]及时获取最新动态。
 
-<img src="style/bigdataqr2.jpg" alt="nlpqr" style="zoom:50%;" />
+<img src="../style/bigdataqr.png" alt="大数据笔记本" style="zoom:50%;" />
 
 
 
