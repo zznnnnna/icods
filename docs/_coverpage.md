@@ -2,15 +2,31 @@
 
 # **i编程**<small>.cn</small>
 
-- <h3>本网站主要分享以下两个方面的内容</h3>
+[//]: # (- <h3>本网站主要分享以下两个方面的内容</h3>)
+
+[//]: # ()
+
+[//]: # (- <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>)
+
+[//]: # ()
+
+[//]: # (<!-- 从 ```Java``Java` 转型 ```大数据开发```的学习经验总结<br>从 ```Python``` 转型 ```NLP自然语言处理```的学习经验总结<br>)
+
+[//]: # (-->)
+
+[//]: # (<br>&#40;  感兴趣的小伙伴，可以点击一下按钮进行阅读📕  &#41;<br>)
+
+[//]: # ([大数据开发]&#40;/bigdata/&#41;)
+
+[//]: # ([NLP自然语言处理]&#40;/nlp/&#41;)
+
+- <h3>本网站主要分享大数据开发相关内容</h3>
 
 - <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
 
-<!-- 从 ```Java``Java` 转型 ```大数据开发```的学习经验总结<br>从 ```Python``` 转型 ```NLP自然语言处理```的学习经验总结<br>
--->
+[//]: # (<br>&#40;  感兴趣的小伙伴，可以点击一下按钮进行阅读📕  &#41;<br>)
 
-<br>(  感兴趣的小伙伴，可以点击相应的内容进行阅读📕  )<br>
+[大数据开发](?id=聊聊大数据)
+[GitHub](//github.com/zznnnnna/bigdata-notebook)
 
-[大数据开发](/bigdata/)
-[NLP自然语言处理](/nlp/)
 

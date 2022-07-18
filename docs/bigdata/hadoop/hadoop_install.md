@@ -1,4 +1,5 @@
-1.hadoop下载地址
+### HADOOP伪分布式集群安装
+#### 1.hadoop下载地址
 
 https://hadoop.apache.org/release/3.2.3.html
 
@@ -6,13 +7,13 @@ https://mirrors.tuna.tsinghua.edu.cn/apache/
 
 ![download](imgs/hadoop_download.png)
 
-3.jdk下载地址
+#### 2.jdk下载地址
 
 https://www.oracle.com/java/technologies/downloads/
 
 ![download](imgs/jdk_download.png)
 
-4.下载后传输至服务器并解压
+#### 3.下载后传输至服务器并解压
 
 ```shell
 n@n:~/module$ tar -xzvf hadoop-3.2.3.tar.gz 
@@ -29,7 +30,7 @@ drwxr-xr-x 8 n n      4096 Apr 26 14:03 jdk1.8
 n@n:~/module$ 
 ```
 
-5.添加环境变量
+#### 4.添加环境变量
 
 ```shell
 n@n:~$ vim .bash_profile #所有用户的环境变量 /etc/profile
@@ -49,7 +50,7 @@ n@n:~$ pwd
 
 ```
 
-6.修改etc/hadoop/hadoop-env.sh
+#### 5.修改etc/hadoop/hadoop-env.sh
 
 ```shell
 n@n:~/module/hadoop-3.2.3$ mkdir logs
@@ -65,7 +66,7 @@ export HADOOP_LOG_DIR=/home/n/module/hadoop-3.2.3/logs
 ##
 ```
 
-7.切换hostname 并设置免密ssh
+#### 6.切换hostname 并设置免密ssh
 
 ```shell
 [sudo] password for n: 
@@ -172,7 +173,7 @@ Last login: Fri Jul 15 13:08:10 2022 from 127.0.0.1
 n@icods:~$ 
 ```
 
-8.修改
+#### 7.修改
 
 ```shell
 n@icods:~$ cd module/hadoop-3.2.3
@@ -192,7 +193,7 @@ n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/core-site.xml
 
 ```
 
-9.修改hdfs-site.xml文件，把hdfs中文件副本的数量设置为1，因为现在伪分布集群只有一个节点
+#### 8.修改hdfs-site.xml文件，把hdfs中文件副本的数量设置为1，因为现在伪分布集群只有一个节点
 
 ```
 n@icods:~/module/hadoop-3.2.3$ vi etc/hadoop/hdfs-site.xml 
@@ -204,7 +205,7 @@ n@icods:~/module/hadoop-3.2.3$ vi etc/hadoop/hdfs-site.xml
 </configuration>                  
 ```
 
-10.修改mapred-site.xml，设置mapreduce使用的资源调度框架
+#### 9.修改mapred-site.xml，设置mapreduce使用的资源调度框架
 
 ```
 n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/mapred-site.xml 
@@ -216,7 +217,7 @@ n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/mapred-site.xml
 </configuration>
 ```
 
-11.修改yarn-site.xml，设置yarn上支持运行的服务和环境变量白名单
+#### 10.修改yarn-site.xml，设置yarn上支持运行的服务和环境变量白名单
 
 ```shell
 n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/yarn-site.xml 
@@ -234,14 +235,14 @@ n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/yarn-site.xml
 </configuration>
 ```
 
-12.设置集群中从节点的主机名信息，在这里就一台集群，所以就填写icods即可
+#### 11.设置集群中从节点的主机名信息，在这里就一台集群，所以就填写icods即可
 
 ```
 n@icods:~/module/hadoop-3.2.3$ vim etc/hadoop/workers 
 icods
 ```
 
-13.格式化HDFS
+#### 12.格式化HDFS
 
 到这就修改好了，但是还不能直接启动，因为Hadoop中的HDFS是一个分布式的文件系统，文
 
@@ -342,7 +343,7 @@ SHUTDOWN_MSG: Shutting down NameNode at localhost/127.0.0.1
 ************************************************************/
 ```
 
-14.启动伪分布集群
+#### 13.启动伪分布集群
 
 ```shell
 n@icods:~/module/hadoop-3.2.3$ vim sbin/start-dfs.sh
@@ -386,7 +387,7 @@ n@icods:~/module/hadoop-3.2.3$ jps
 n@icods:~/module/hadoop-3.2.3$ 
 ```
 
-15.验证进程
+#### 14.验证进程
 
 ```shell
 n@icods:~/module/hadoop-3.2.3$ jps
