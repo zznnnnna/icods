@@ -9,3 +9,5 @@ HELP.md
 # ds_store
 .DS_Store
 docs/.DS_Store
+
+.idea/
