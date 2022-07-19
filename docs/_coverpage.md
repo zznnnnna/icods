@@ -26,7 +26,7 @@
 
 [//]: # (<br>&#40;  感兴趣的小伙伴，可以点击一下按钮进行阅读📕  &#41;<br>)
 
-[大数据开发](?id=聊聊大数据)
 [GitHub](//github.com/zznnnnna/bigdata-notebook)
+[立即开始](?id=聊聊大数据)
 
 
