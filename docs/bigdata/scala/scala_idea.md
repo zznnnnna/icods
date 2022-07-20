@@ -1,8 +1,21 @@
 ### 使用idea开发Scala
 #### 1、安装scala插件
-![img.png](imgs/scala_idea.png)
+<img src="imgs/scala_idea.png" alt="idea" style="zoom:35%;" />
 #### 2、
 
+
+
+
+<img src="imgs/scala_idea.png" alt="idea" style="zoom:35%;" />
+<img src="imgs/scala_idea2.png" alt="idea2" style="zoom:35%;" />
+<img src="imgs/scala_idea3.png" alt="idea3" style="zoom:35%;" />
+<img src="imgs/scala_idea4.png" alt="idea4" style="zoom:35%;" />
+<img src="imgs/scala_idea5.png" alt="idea5" style="zoom:35%;" />
+<img src="imgs/scala_idea6.png" alt="idea6" style="zoom:35%;" />
+
+<img src="imgs/scala_object1.png" alt="object" style="zoom:35%;" />
+<img src="imgs/scala_object2.png" alt="object2" style="zoom:35%;" />
+<img src="imgs/scala_object3.png" alt="object3" style="zoom:35%;" />
 
 ```scala
 object ScalaObjectDemo {
@@ -13,16 +26,6 @@ object ScalaObjectDemo {
 }
 
 ```
-![](imgs/scala_idea.png)
-![](imgs/scala_idea2.png)
-![](imgs/scala_idea3.png)
-![](imgs/scala_idea4.png)
-![](imgs/scala_idea5.png)
-![](imgs/scala_idea6.png)
-
-![](imgs/scala_object.png)
-![](imgs/scala_object2.png)
-![](imgs/scala_object3.png)
 scala中接口使用trait而不是iterface
 scala中不支持类的多继承
 scala支持对trait进行多重继承,需要使用with完成多重继承
