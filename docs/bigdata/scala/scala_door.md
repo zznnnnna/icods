@@ -1,8 +1,14 @@
 ### Scala快速入门
-#### 1、Scala下载地址
+#### 1、Scala安装
+>1、下载地址
+```text
 https://www.scala-lang.org/download/all.html
 https://www.scala-lang.org/download/2.12.11.html
-![download](imgs/scala_download.png)
+```
+<img src="bigdata/scala/imgs/scala_download.png" alt="download" style="zoom:35%;" />
+
+> 2、解压
+
 ```shell
 n@n:~/module$ wget https://downloads.lightbend.com/scala/2.12.11/scala-2.12.11.tgz
 n@n:~/module$ tar -xzvf scala-2.12.11.tgz 
