@@ -41,14 +41,14 @@ res2: Int = 4
 scala> 
 ```
 #### 4、Scala基础语法
->##### 常量变量
 ```shell
+#scala中使用val定义常量 使用var定义变量
 scala> val a=1
 a: Int = 1
 
 scala> var b=1
 b: Int = 1
-
+#可以在创建对象的时候声明类型，也可以自动推断
 scala> val c: Int = 3
 c: Int = 3
 
