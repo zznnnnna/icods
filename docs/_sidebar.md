@@ -12,5 +12,5 @@
 
 [//]: # (  - [HDFS]&#40;bigdata/hadoop/hdfs_01.md&#41;)
 - Scala
-  - [Scala安装与快速入门](bigdata/scala/scala_door.md)
+  - [Scala快速入门](bigdata/scala/scala_door.md)
   - [使用idea创建Scala对象](bigdata/scala/scala_idea.md)
