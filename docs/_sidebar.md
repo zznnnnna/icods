@@ -1,4 +1,4 @@
-- [<b>聊聊大数据</b>](README.md "The greatest guide in the world")
+- [<b>👀聊聊大数据</b>](README.md "The greatest guide in the world")
 
 [//]: # (- 剑指Linux)
 
@@ -8,9 +8,9 @@
 
 [//]: # (    )
 - Hadoop
-  - [Hadoop伪集群模式部署](bigdata/hadoop/hadoop_install.md)
+  - [🐱‍🏍Hadoop伪集群模式部署](bigdata/hadoop/hadoop_install.md)
 
 [//]: # (  - [HDFS]&#40;bigdata/hadoop/hdfs_01.md&#41;)
 - Scala
-  - [Scala快速入门](bigdata/scala/scala_door.md)
-  - [使用idea创建Scala对象](bigdata/scala/scala_idea.md)
+  - [🏠Scala基础语法](bigdata/scala/scala_door.md)
+  - [✨使用idea开发Scala](bigdata/scala/scala_idea.md)
