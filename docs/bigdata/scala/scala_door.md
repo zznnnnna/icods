@@ -9,13 +9,13 @@ https://www.scala-lang.org/download/2.12.11.html
 
 > 解压
 
-```shell script
+```shell 
 n@n:~/module$ wget https://downloads.lightbend.com/scala/2.12.11/scala-2.12.11.tgz
 n@n:~/module$ tar -xzvf scala-2.12.11.tgz 
 
 ```
 #### 2、配置环境变量
-```shell script
+```shell 
 n@n:~/module/scala-2.12.11$ pwd
 /home/n/module/scala-2.12.11
 n@n:~/module/scala-2.12.11$ vim ~/.bash_profile 
@@ -24,7 +24,7 @@ export PATH=.:$SCALA_HOME/bin:$PATH
 n@n:~/module/scala-2.12.11$ source ~/.bash_profile 
 ```
 #### 3、环境验证
-```shell script
+```shell 
 n@n:~/module/scala-2.12.11$ scala
 Welcome to Scala 2.12.11 (Java HotSpot(TM) 64-Bit Server VM, Java 1.8.0_333).
 Type in expressions for evaluation. Or try :help.
@@ -52,7 +52,7 @@ scala>
 scala中变量分为可变var和不可变val两种
 可变var：可以随时修改生命的变量的值
 不可变val：不可以随时修改变量的值
-```shell script
+```shell 
 
 scala> val a=1
 a: Int = 1
@@ -61,7 +61,7 @@ scala> var b=1
 b: Int = 1
 ```
 声明的变量不论是可变的还是不可变的都可以手动指定变量的类型，如果不手动指定类型Scala会根据值进行自动推断类型
-```shell script
+```shell 
 scala> val c: Int = 3
 c: Int = 3
 
@@ -75,7 +75,7 @@ res1: String = 1
 > 操作符
 
 Scala的操作符与Java几乎没有区别，值得注意的是Scala中没有++、-- 只有+=、-=
-```shell script
+```shell 
 scala> var count=1
 count: Int = 1
 
@@ -99,7 +99,7 @@ CTRL+D 代表多行代码的结束
 
 >while循环
 
-```shell script
+```shell 
 
 scala> :paste
 // Entering paste mode (ctrl-D to finish)
@@ -134,7 +134,7 @@ to是左闭右闭
 until是左闭右开
 1 to 10 代表1到10
 1 until 代表1到9
-```shell script
+```shell 
 scala> :paste
 // Entering paste mode (ctrl-D to finish)
 
@@ -198,7 +198,7 @@ HashSet：无序、不重复
 LinkedHashSet：有序、不重复、按照插入顺序排序（链表）
 SortedSet：有序、不重复、按照元素的自然顺序排序
 
-```shell script
+```shell 
 scala> val s=Set(1,2,3)
 s: scala.collection.immutable.Set[Int] = Set(1, 2, 3)
 
@@ -230,7 +230,7 @@ List的两个函数
 head：集合的第一个元素
 tail：集合第一个元素之后的所有元素
 
-```shell script
+```shell 
 scala> 
 
 scala> val l=List(1,2,3,4)
@@ -244,7 +244,7 @@ res15: Int = 1
 ```
 
 :: 操作符代表拼接
-```shell script
+```shell 
 scala>  l.head :: l.tail
 res16: List[Int] = List(1, 2, 3, 4)
 
@@ -258,7 +258,7 @@ scala> for(i<- l) println(i)
 >Map
 
 **不可变Map**
-```shell script
+```shell 
 
 scala> val names= Map("name1"->"Rex","name2"->"Simon","name3"->"Gordon")
 names: scala.collection.immutable.Map[String,String] = Map(name1 -> Rex, name2 -> Simon, name3 -
@@ -267,7 +267,7 @@ scala> names("name1")
 res1: String = Rex
 ```
 **可变Map**
-```shell script
+```shell 
 scala> val mulnames=scala.collection.mutable.Map("name1"->"Rex","name2"->"Simon","name3"->"Gordon")
 mulnames: scala.collection.mutable.Map[String,String] = Map(name2 -> Simon, name1 -> Rex, name3 -> Gordon)
 
@@ -278,7 +278,7 @@ scala>
 
 ```
 **Map另一种定义方式**
-```shell script
+```shell 
 
 scala> val ages=Map(("age1",22),("age2",23))
 ages: scala.collection.immutable.Map[String,Int] = Map(age1 -> 22, age2 -> 23)
@@ -294,7 +294,7 @@ scala>
 
 contains: 检查Map中的key是否存在
 getOrElse：如果key存在则返回value，否则返回参数2
-```shell script
+```shell 
 
 scala> val age3=if(ages.contains("age3")) ages("age3") else 0
 age3: Int = 0
@@ -305,7 +305,7 @@ age: Int = 0
 
 **编辑修改Map**
 
-```shell script
+```shell 
 
 scala>  val mulnames=scala.collection.mutable.Map("name1"->"Rex","name2"->"Simon","name3"->"Gord                   on")
 mulnames: scala.collection.mutable.Map[String,String] = Map(name2 -> Simon, name1 -> Rex, name3 -> Gordon)
@@ -354,7 +354,7 @@ LinkedHashMap：以key-value的插入顺序保持顺序、可变
 >Array
 
 与Java中的Array类似，是长度不可变的，底层其实就是Java数组
-```shell script
+```shell 
 
 scala> val arr=new Array[Int](10)
 arr: Array[Int] = Array(0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
@@ -379,7 +379,7 @@ res3: String = Gordon
 
 **可变的数组**
 
-```shell script
+```shell 
 scala>  import scala.collection.mutable.ArrayBuffer
 import scala.collection.mutable.ArrayBuffer
 
@@ -426,7 +426,7 @@ res12: Array[Int] = Array(1, 2, 3, 4, 8)
 Tuple：元组，与Arry一样都是不可变的。Tuple的角标从1开始，Array角标从0开始。
 Scala中的元组最大长度为22，针对更大长度推荐集合、数组
 
-```shell script
+```shell 
 
 scala> val tup=(1,"Rex",24)
 tup: (Int, String, Int) = (1,Rex,24)
@@ -438,8 +438,12 @@ scala> tup._2
 res14: String = Rex
 
 ```
-##### 总结
+#### 总结
+
 **可变集合： LinkedHashSet、ListBuffer、ArrayBuffer、LinkedHashMap**
+
 **可变+不可变集合： Set、HashSet、SortedSet、Map、HashMap**
+
 **Array：长度不可变、里面的元素可变**
+
 **Tuple：长度不可变、元素不可变**
