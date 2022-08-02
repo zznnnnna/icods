@@ -438,6 +438,21 @@ scala> tup._2
 res14: String = Rex
 
 ```
+
+>lazy
+
+Scala提供了lazy特性，如果将一个变量声明为lazy，则只有在第一次使用该变量时，变量对应的表达式才
+会发生计算
+
+使用场景：使用lazy后即使文件不存在也不会报错，只有使用的时候才会报错
+```shell
+scala>  import scala.io.Source._
+import scala.io.Source._
+
+scala>  lazy val lines = fromFile("D://test.txt").mkString
+lines: String = <lazy>
+```
+
 #### 总结
 
 **可变集合： LinkedHashSet、ListBuffer、ArrayBuffer、LinkedHashMap**

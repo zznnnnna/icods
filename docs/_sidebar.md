@@ -14,3 +14,4 @@
 - Scala
   - [🏠Scala基础语法](bigdata/scala/scala_door.md)
   - [✨使用idea开发Scala](bigdata/scala/scala_idea.md)
+  - [🤦‍♀Scala面向对象️](bigdata/scala/scala_object.md)
