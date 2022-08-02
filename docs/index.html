@@ -21,9 +21,10 @@
 
 <body background="" style=" background-repeat:no-repeat ;background-size:100% 100%;background-attachment: fixed;">
 <!--<div id="app">加载中...</div>-->
-<!--<a class="to-top">Top</a>-->
+<a class="to-top">Top</a>
 <!--<div id="app" class="loadingEight">-->
 <div id="app" class="loadingSeven">
+    <span></span>
     <span></span>
     <span></span>
     <span></span>
@@ -49,13 +50,13 @@
             placeholder: {
                 '/': '🔍 搜索',
                 '/bigdata/': '🔍 搜索',
-                '/nlp/': '🔍 搜索'
+                // '/nlp/': '🔍 搜索'
             },
             //如果中文和英文文档都没有内容，则返回
             noData: {
                 '/': '😒 找不到结果',
                 '/bigdata/': '😒 找不到结果',
-                '/nlp/': '😒 找不到结果'
+                // '/nlp/': '😒 找不到结果'
             },
 
             depth: 4,         //搜索标题的最大层级
@@ -77,7 +78,14 @@
 
         'flexible-alerts': {
             style: 'flat'
-        }
+        },    // ...
+        // scrollToTop: {
+        //     auto: true,
+        //     text: 'Top',
+        //     right: 15,
+        //     bottom: 15,
+        //     offset: 500
+        // }
 
     }
 </script>
