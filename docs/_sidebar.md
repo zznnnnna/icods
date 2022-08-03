@@ -1,5 +1,5 @@
 - 大数据
-    - [聊聊大数据](README.md "The greatest guide in the world")
+    - [聊聊大数据](README.md)
     - Hadoop
       - [Hadoop伪集群模式部署](bigdata/hadoop/hadoop_install.md)
     - Scala
